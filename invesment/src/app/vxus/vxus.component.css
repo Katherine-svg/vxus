@@ -1,0 +1,37 @@
+
+.stick-nav {
+    overflow: hidden;
+    background-color: #232323;
+  }
+  
+  .stick-nav a {
+    float: left;
+    color: #e2e0e0;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .stick-nav a:hover {
+    color: #c0bebe;
+  }
+  
+  .stick-nav a.active {
+    background-color: #000;
+    border-bottom: 6px solid #949494
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky */

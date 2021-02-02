@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="title">
+        <div>
+    <h2>Fund literature</h2>
+        </div>
+        <div>
+    <a href="#">Order Fund literature</a>   
+        </div>
+    </div>
+    <form>
+    <div class="box">
+
+        <div>
+            <input type="checkbox" [checked]="selectAll" (change)="selectAll = !selectAll" (click)="isAll()">
+            <label><span>Select all</span></label>
+        </div>
+        <div>
+            <input type="checkbox" [checked]="factSheet" (change)="factSheet = !factSheet" (change)="isCounting()">
+            <label><span>Fact sheet (09/30/2020)</span></label>
+        </div>
+        <div>
+            <input type="checkbox" [checked]="SummaryProspectus" (change)="SummaryProspectus = !SummaryProspectus" (change)="isCounting()">
+            <label><span>Summary prospectus</span></label>
+        </div>
+        <div>
+            <input type="checkbox" [checked]="StatutoryProspectus" (change)="StatutoryProspectus = !StatutoryProspectus" (change)="isCounting()">
+            <label><span>Statutory prospectus</span></label>
+        </div>
+        <div>
+            <input type="checkbox" [checked]="Statement" (change)="Statement = !Statement" (change)="isCounting()">
+            <label><span>Statement of additional information</span></label>
+        </div>
+        <div>
+            <input type="checkbox" [checked]="Investment" (change)="Investment = !Investment" (change)="isCounting()">
+            <label><span>Investment profile (12/31/2020)</span></label>
+        </div>
+        <div>
+            <input type="checkbox" [checked]="Semiannual" (change)="Semiannual = !Semiannual" (change)="isCounting()">
+            <label><span>Semiannual report (04/30/2020)</span></label>
+        </div>
+        <div>
+            <input type="checkbox" [checked]="Annual" (change)="Annual = !Annual" (change)="isCounting()">
+            <label><span>Annual report (10/31/2020)</span></label>
+        </div>
+
+    </div>
+</form>
+
+<div class="download-document" *ngIf="count > 0">
+
+   <p>{{count}} document selected</p>
+</div>
+
+
+<app-disclosures></app-disclosures>
+</div>

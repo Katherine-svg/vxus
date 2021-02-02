@@ -1,0 +1,155 @@
+.container {
+    padding: 3%;
+    padding-top: 10%;
+    height: 5900px;
+    width: 100%;
+}
+.sub-heading{
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.sub-heading p{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.stat-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat-boxes div {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    margin-left: 0px;
+
+}
+
+.small-subtitle{
+    font-size: 0.7em;
+    line-height: 1.5;
+  }
+.large-number{
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+.small-date{
+    font-size: 0.7em;
+    line-height: 1.5;
+  }
+
+hr {
+    margin: 100px 0;
+}
+
+.bid-ask-all-link {
+    margin: 50px 0;
+}
+
+.historical-prices-chart {
+    height: 900px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.premium-discount-chart {
+    height: 900px;
+    width: 100%;
+    background-color: pink;
+}
+
+.related-insights-label {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(204, 203, 203);
+}
+
+.distribution-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h3{
+    margin: 20px 0;
+}
+
+.date-range-container {
+    margin: 20px 0;
+}
+
+.date-picker {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    appearance: none;
+    border: 2px solid #eaeaea;
+    border-radius: 0;
+    color: #6c6c6c;
+    background-color: #fff;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 26px 16px 22px 34px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  .title {
+      font-size: 12px;
+  }
+
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  td, th {
+    padding: 1.2rem;
+  }
+
+  .highlight:hover {background-color: #ddd;}
+
+  .price-disclaimers-container {
+      margin: 40px 0;
+  }
+  .price-disclaimers-container p {
+    font-size: 20px;
+    max-width: 960px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .btn-menu {
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.price-btn {
+    cursor: pointer;
+    appearance: none;
+    padding: 18px 0 15px;
+    font-size: 15px;
+    letter-spacing: -.01em;
+    line-height: 15px;
+    border: none;
+    background: none;
+    margin: 3% 3% 0 0;
+}
+
+.price-menu button:hover {
+    color: #c0bebe;
+}
+
+
+
+.active {
+    border-bottom: 5px solid black;
+}

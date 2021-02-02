@@ -1,0 +1,76 @@
+.container {
+    padding: 3%;
+    padding-top: 10%;
+    height: 2000px;
+    width: 100%;
+    
+}
+
+.box {
+    border-top: 16px solid #96151d;
+}
+
+.Fund-manag {
+    width: 50%;
+    margin: auto;
+}
+
+.Fund-manag h2 {
+
+    margin: 50px 0;
+}
+
+.Fund-manag p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.btn-vng {
+    cursor: pointer;
+    padding-bottom: 24px;
+    padding-right: 40px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    font-size: 26px;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 50px 0 ;
+    border-bottom: 1px solid grey;
+}
+
+.subtitle2 {
+    margin-bottom: 20px;
+}
+.subtitle3 {
+    font-size: 26px;
+}
+
+div .secondP {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bio .p2 {
+    font-size: 12px;
+    line-height: 1.66667;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.bio div {
+    width: 49%;
+    padding: 5px;
+}
+
+div .thirdP{
+    font-size: 16px;
+    margin: 30px 0;
+}

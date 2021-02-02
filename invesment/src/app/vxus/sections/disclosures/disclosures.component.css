@@ -1,0 +1,31 @@
+.disclosures {
+    width: 70%;
+    margin: 60px 0;
+}
+
+.international {
+    margin: 30px 0;
+}
+
+ ol li {
+    font-size: 12px;
+    line-height: 1.66667;
+    padding: 10px 0;
+ }
+
+ .morningstar {
+    font-size: 12px;
+    line-height: 1.66667;
+    padding: 10px 0;
+ }
+
+ .etf {
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 10px 0;
+ }
+
+ .investment {
+    font-size: 12px;
+    line-height: 1.66667;
+ }

@@ -1,0 +1,59 @@
+#card {
+    width: 100%;
+    height: 530px;
+    display: flex;
+  }
+
+  .title{
+    width: 60%;
+    padding: 3%;
+  }
+
+  .title-stock {
+    line-height: 1;
+    font-size: 70px;
+  }
+
+  h1 span {
+    font-size: 52px;
+  }
+
+  .sub-title {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  .menu a{
+    font-size: 0.9em;
+    border-radius: 25px;
+    padding: 15px 23px;
+    margin: 2px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+  }
+
+  .stat-boxes{
+    padding: 3%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stat-boxes div {
+    width: 170px;
+    height: 80px;
+    margin: 15px;
+  }
+
+  .small-subtitle{
+    font-size: 0.7em;
+    line-height: 1.5;
+  }
+.large-number{
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+.small-date{
+  font-size: 0.7em;
+  line-height: 1.5;
+}

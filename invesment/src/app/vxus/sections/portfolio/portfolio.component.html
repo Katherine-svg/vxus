@@ -1,0 +1,209 @@
+<div class="container">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+    <div class="portfolio--left">
+        <div class="subtitle">
+            <h3>Market capitalization</h3>
+            <p>as of 12/31/2020</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                    <th class="title">MARKET SIZE</th>
+                    <th class="title">VXUS</th>
+                    <th class="title">BENCHMARK</th>
+                    <th class="title">+/- WEIGHT</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <th class="subtitle">Large</th>
+                        <td>71.9%</td>
+                        <td>72.1%</td>
+                        <td>-0.2%</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th class="subtitle">Medium/Large</th>
+                        <td>3.8%</td>
+                        <td>3.8%</td>
+                        <td>0.0%</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th class="subtitle">Medium</th>
+                        <td>12.4%</td>
+                        <td>12.3%</td>
+                        <td>0.1%</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th class="subtitle">Medium/Small</th>
+                        <td>5.3%</td>
+                        <td>5.3%</td>
+                        <td>0.0%</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th class="subtitle">Small</th>
+                        <td>6.2%</td>
+                        <td>6.4%</td>
+                        <td>-0.2%</td>
+                        </tr>    
+                    </tbody>
+            </table>
+            <div class="more-info">
+            <a href="#">More information about market capitalization</a>
+            </div>
+            <hr>
+
+            <div class="subtitle">
+                <h3>Fundamentals</h3>
+                <p>as of 12/31/2020</p>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                        <th class="title">FUNDAMENTAL</th>
+                        <th class="title">VXUS</th>
+                        <th class="title">BENCHMARK</th>
+                        </tr>
+                        </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <th class="subtitle">Number of stocks</th>
+                            <td>7386</td>
+                            <td>7212</td>
+                            </tr>
+                        <tr class="highlight">
+                            <th class="subtitle">Median market cap</th>
+                            <td>$31.6 B</td>
+                            <td>$31.6 B</td>
+                            </tr>
+                        <tr class="highlight">
+                            <th class="subtitle">% Emerging</th>
+                            <td>25.80%</td>
+                            <td>25.80%</td>
+                            </tr>
+                        <tr class="highlight">
+                            <th class="subtitle">% Developed</th>
+                            <td>74.20%</td>
+                            <td>74.20%</td>
+                            </tr>
+                        <tr class="highlight">
+                            <th class="subtitle">Earnings growth rate</th>
+                            <td>9.71%</td>
+                            <td>9.59%</td>
+                            </tr>    
+                        <tr class="highlight">
+                            <th class="subtitle">Short-term reserves</th>
+                            <td>-</td>
+                            <td>N/A</td>
+                            </tr>    
+                        <tr class="highlight">
+                            <th class="subtitle">% of ADRs (as of 12/31/2020)</th>
+                            <td>3.14%</td>
+                            <td>N/A</td>
+                            </tr>    
+                        <tr class="highlight">
+                            <th class="subtitle">P/E ratio</th>
+                            <td>19.8x</td>
+                            <td>19.9x</td>
+                            </tr> 
+                        <tr class="highlight">
+                            <th class="subtitle">P/B ratio</th>
+                            <td>1.7x</td>
+                            <td>1.7x</td>
+                            </tr>    
+                        <tr class="highlight">
+                            <th class="subtitle">Turnover rate (Fiscal Year-end 10/31/2020)</th>
+                            <td>7.20%</td>
+                            <td>N/A</td>
+                            </tr> 
+                        <tr class="highlight">
+                            <th class="subtitle">Return on equity</th>
+                            <td>12.78%</td>
+                            <td>12.88%</td>
+                            </tr>    
+                        <tr class="highlight">
+                            <th class="subtitle">Foreign holdings</th>
+                            <td>98.84%</td>
+                            <td>N/A</td>
+                            </tr> 
+                        </tbody>
+                </table>
+
+    </div>
+    <div class="portfolio--right">
+        <div class="subtitle">
+            <h3>Fundamentals</h3>
+            <p>Equity</p>
+
+            <p>Diversified index portfolio of non-US stocks representing the 
+                major developed and emerging equity markets.</p>
+            
+            <img class="emerging" src="assets/E3369.png" alt="">
+        </div>
+
+        <div class="stylebox">
+        <a href="#">How to read our stylebox</a>
+        </div>
+    </div>
+    </div>
+
+<div class="holdings">
+    <div class="holdings-menu">
+    <div class="subtitle">
+        <h3>Holdings details</h3>
+        <p>as of 12/31/2020</p>
+    </div>
+    <div>
+        <a href="#">Export full holdings</a>
+    </div>
+    </div>
+
+    <div class="btn-menu">
+    <button (click)="toggleE()" class="portfolio-btn" [ngClass]="{'active': showEquity}">Equity</button>
+    <button (click)="toggleF()" class="portfolio-btn" [ngClass]="{'active': showFixed}">Fixed income</button>
+    <button (click)="toggleS()" class="portfolio-btn" [ngClass]="{'active': showShort}">Short-term reserves</button>
+    <button (click)="toggleP()" class="portfolio-btn" [ngClass]="{'active': showPortfolio}">Portfolio Composition File</button>
+    </div>
+
+    <app-equity *ngIf="showEquity"></app-equity>
+    <app-fixed-income *ngIf="showFixed"></app-fixed-income>
+    <app-short-term *ngIf="showShort"></app-short-term>
+    <app-portfolio-composition *ngIf="showPortfolio"></app-portfolio-composition>
+
+    </div>
+
+    <div class="card-boxes">
+        <div>
+        <h3 class="subtitle-content">Compare products</h3>
+        <p>Perform direct, side-by-side product comparisons of up 
+            to five Vanguard and non-Vanguard products with our relatable, 
+            unbiased product comparison tool.</p>
+        </div>
+            <a href="#">Compare products</a>
+    </div>
+
+    <div class="Weighted-exposures">
+        <div class="holdings-menu">
+        <div class="subtitle">
+            <h3>Weighted exposures</h3>
+            <p>as of 12/31/2020</p>
+        </div>
+        <div>
+            <a href="#">Export sector data</a>
+        </div>
+        </div>
+
+    <div class="btn-menu">
+        <button (click)="toggleSe()" class="portfolio-btn" [ngClass]="{'active': showSectors}">Sectors</button>
+        <button (click)="toggleR()" class="portfolio-btn" [ngClass]="{'active': showRegions}">Regions</button>
+        <button (click)="toggleM()" class="portfolio-btn" [ngClass]="{'active': showMarkets}">Markets</button>
+    </div>
+        
+    <app-sectors *ngIf="showSectors"></app-sectors>
+    <app-regions *ngIf="showRegions"></app-regions>
+    <app-market *ngIf="showMarkets"></app-market>
+    
+    </div>
+
+</div>

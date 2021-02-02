@@ -1,0 +1,346 @@
+<div class="container">
+    <h2>Price & distributions</h2>
+
+    <div class="sub-heading">
+        <h3>Current price</h3>
+        <p>Current price as of Fri Jan 22 15:30:00 EST 2021</p>
+    </div>
+
+    <div class="stat-boxes">
+        <div>
+            <p class="small-subtitle">MARKET PRICE</p>
+            <p class="large-number">$62.81</p>
+        </div>
+        <div>
+            <p class="small-subtitle">DAILY CHANGE</p>
+            <p class="large-number">-$0.43 (-0.67%)</p>
+        </div>
+        <div>
+            <p class="small-subtitle">OPEN</p>
+            <p class="large-number">$62.57</p>
+        </div>
+        <div>
+            <p class="small-subtitle">HIGH</p>
+            <p class="large-number">$62.88</p>
+        </div>
+        <div>
+            <p class="small-subtitle">LOW</p>
+            <p class="large-number">$62.53</p>
+        </div>
+        <div>
+            <p class="small-subtitle">SIZE</p>
+            <p class="large-number">81 x 174</p>
+        </div>
+        <div>
+            <p class="small-subtitle">TICK</p>
+            <p class="large-number">UP</p>
+        </div>
+        <div>
+            <p class="small-subtitle">VOLUME</p>
+            <p class="large-number">2,643,813</p>
+        </div>
+        <div>
+            <p class="small-subtitle">BID/ASK SPREAD</p>
+            <p class="large-number">$0.01(0.02%)</p>
+            <p></p>
+        </div>
+    </div>
+    <div class="stat-disclaimer">
+        <p>Quotes delayed at least 20 minutes. Market data provided by Reuters</p>
+    </div>
+    <hr>
+
+    <div class="closing-price">
+        <div class="sub-heading">
+            <h3>Closing price</h3>
+            <p>Closing price as of 01/21/2021</p>
+        </div>
+
+        <div class="stat-boxes">
+            <div>
+                <p class="small-subtitle">MARKET PRICE</p>
+                <p class="large-number">$63.22</p>
+            </div>
+            <div>
+                <p class="small-subtitle">MARKET PRICE CHANGE</p>
+                <p class="large-number">$0.04 (0.06%)</p>
+            </div>
+            <div>
+                <p class="small-subtitle">NAV</p>
+                <p class="large-number">$63.14</p>
+            </div>
+            <div>
+                <p class="small-subtitle">NAV CHANGE</p>
+                <p class="large-number">$0.02 (0.03%)</p>
+            </div>
+            <div>
+                <p class="small-subtitle">30-DAY MEDIAN BID/ASK SPREAD</p>
+                <p class="large-number">0.02%</p>
+            </div>
+            <div>
+                <p class="small-subtitle">52-WEEK HIGH</p>
+                <p class="large-number">$63.22</p>
+                <p class="small-date">01/21/2021</p>
+            </div>
+            <div>
+                <p class="small-subtitle">52-WEEK LOW</p>
+                <p class="large-number">$36.79</p>
+                <p class="small-date">03/23/2020</p>
+            </div>
+            <div>
+                <p class="small-subtitle">52-WEEK DIFFERENCE</p>
+                <p class="large-number">$26.43 (71.85%)</p>
+            </div>
+            <div>
+                <p class="small-subtitle">PREMIUM/DISCOUNT</p>
+                <p class="large-number">$0.08 (0.12%)</p>
+            </div>
+            <div>
+                <p class="small-subtitle">25-DAY AVG VOLUME</p>
+                <p class="large-number">3,855,919</p>
+            </div>
+            <div>
+                <p class="small-subtitle">50-DAY AVG VOLUME</p>
+                <p class="large-number">3,660,636</p>
+            </div>
+        </div>
+    </div>
+    <div class="bid-ask-all-link">
+        <a href="#">
+            <span>View the median bid/ask spreads for all Vanguard ETFs</span>
+        </a>
+    </div>
+    <hr>
+    <section class="historical-prices-chart">
+        <h3>Historical Prices</h3>
+
+        <div class="btn-menu">
+        <button (click)="toggleC()" class="price-btn" [ngClass]="{'active': showCurrent}">Current</button>
+        <button (click)="toggleO()" class="price-btn" [ngClass]="{'active': showOne}">1 month</button>
+        <button (click)="toggleT()" class="price-btn" [ngClass]="{'active': showThree}">3 month</button>
+        <button (click)="toggleS()" class="price-btn" [ngClass]="{'active': showSix}">6 month</button>
+        <button (click)="toggleTw()" class="price-btn" [ngClass]="{'active': showTwelve}">12 month</button>
+        <button (click)="toggleE()" class="price-btn" [ngClass]="{'active': showEighteen}">18 month</button>
+        </div>
+
+        <app-current *ngIf="showCurrent"></app-current>
+        <app-one-month *ngIf="showOne"></app-one-month>
+        <app-three-month *ngIf="showThree"></app-three-month>
+        <app-six-month *ngIf="showSix"></app-six-month>
+        <app-twelve-month *ngIf="showTwelve"></app-twelve-month>
+        <app-eighteen-month *ngIf="showEighteen"></app-eighteen-month>
+
+        </section>
+
+    <section class="premium-discount-chart">
+        <h3>Premium/Discount chart</h3>
+
+        <div class="btn-menu">
+        <button (click)="toggleCq()" class="price-btn" [ngClass]="{'active': showCurrentQtr}">Current qtr</button>
+        <button (click)="toggleQf()" class="price-btn" [ngClass]="{'active': showQfour}">Q4 2020</button>
+        <button (click)="toggleQt()" class="price-btn" [ngClass]="{'active': showQthree}">Q3 2020</button>
+        <button (click)="toggleQtw()" class="price-btn" [ngClass]="{'active': showQtwo}">Q2 2020</button>
+        <button (click)="toggleQo()" class="price-btn" [ngClass]="{'active': showQone}">Q1 2020</button>
+        <button (click)="toggleCy()" class="price-btn" [ngClass]="{'active': showCalendar}">Calendar Year 2020</button>
+    </div>
+
+        <app-current-qtr *ngIf="showCurrentQtr"></app-current-qtr>
+        <app-qfour *ngIf="showQfour"></app-qfour>
+        <app-qthree *ngIf="showQthree"></app-qthree>
+        <app-qtwo *ngIf="showQtwo"></app-qtwo>
+        <app-qone *ngIf="showQone"></app-qone>
+        <app-calendar-year *ngIf="showCalendar"></app-calendar-year>
+
+    </section>
+
+    <div class="related-insights-label">
+        <div>
+        <span>Related insights:</span><span>Bond ETF discounts during recent volatility</span>
+        </div>
+        <div class="view-article">
+        <a href="#">View article</a>
+        </div>
+    </div>
+
+    <div class="summary-price">
+        <div class="sub-heading">
+            <p>Summary for calendar year 2020</p>
+        </div>
+
+        <div class="stat-boxes">
+            <div>
+                <p class="small-subtitle">% OF DAYS WITHIN 0.25%</p>
+                <p class="large-number">$76.70</p>
+            </div>
+            <div>
+                <p class="small-subtitle"># OF DAYS WITHIN 0.25%</p>
+                <p class="large-number">194</p>
+            </div>
+            <div>
+                <p class="small-subtitle"># OF DAYS AT PREMIUM</p>
+                <p class="large-number">181</p>
+            </div>
+            <div>
+                <p class="small-subtitle"># OF DAYS AT DISCOUNT</p>
+                <p class="large-number">72</p>
+            </div>
+            <div>
+                <p class="small-subtitle">GREATEST PREMIUM</p>
+                <p class="large-number">1.27%</p>
+                <p class="small-date">06/29/2020</p>
+            </div>
+            <div>
+                <p class="small-subtitle">GREATEST DISCOUNT</p>
+                <p class="large-number">-0.86%</p>
+                <p class="small-date">03/12/2020</p>
+            </div>
+        </div>
+
+        <div class="premium-discount-chart-stat-disclaimer">
+            <p>Understanding premium/discount</p>
+            <p>Premium and discount information is calculated to illustrate the historical differences between an ETF's market price and the value of its underlying securities, or its NAV. Because ETFs are traded throughout the day on a stock exchange, their prices may at times vary from the value of their underlying securities—trading at a premium with significant buying demand and at a discount with selling demand. This disconnect is typically corrected through an ETF's unique creation and redemption process. In the case of a premium, an Authorized Participant would create shares of an ETF by buying the underlying securities, delivering them to the fund provider in exchange for ETF shares, which would, in turn, be sold until the premium has eroded. As a result, price differences tend to be fleeting.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="Realized-gains">
+        <div class="sub-heading">
+            <h3>Realized/Unrealized gains</h3>
+            <p>as of 12/31/2020</p>
+        </div>
+
+        <div class="stat-boxes">
+            <div>
+                <p class="small-subtitle">REALIZED GAIN</p>
+                <p class="large-number">-$2.48</p>
+            </div>
+            <div>
+                <p class="small-subtitle">% OF NAV</p>
+                <p class="large-number">-4.11%</p>
+            </div>
+            <div>
+                <p class="small-subtitle">UNREALIZED GAINS OF NAV</p>
+                <p class="large-number">$11.54</p>
+            </div>
+            <div>
+                <p class="small-subtitle">% OF NAV</p>
+                <p class="large-number">19.12%</p>
+            </div>
+            <div>
+                <p class="small-subtitle">DISTRIBUTION SCHEDULE</p>
+                <p class="large-number">Quartely</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="distribution-table">
+        <div>
+            <h3>Distribution</h3>
+            <p>View up to ten years of distributions for this fund.
+            </div>
+        <div>
+            <a href="#">Export distribution data</a>
+            </div>
+        </div>
+
+        <div class="date-range-container">
+            <input class="date-picker" type="date" value="2011-12-28">
+            <input class="date-picker" type="date" value="2020-12-24">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                    <th class="title">TYPE</th>
+                    <th class="title">$/SHARE</th>
+                    <th class="title">PAYABLE DATE</th>
+                    <th class="title">RECORD DATE</th>
+                    <th class="title">EX-DIVIDEND DATE</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.59030</td>
+                        <td>12/24/2020</td>
+                        <td>12/22/2020</td>
+                        <td>12/21/2020</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.33850</td>
+                        <td>09/24/2020</td>
+                        <td>09/22/2020</td>
+                        <td>09/21/2020</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.25210</td>
+                        <td>06/25/2020</td>
+                        <td>06/23/2020</td>
+                        <td>06/22/2020</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.10580</td>
+                        <td>03/26/2020</td>
+                        <td>03/24/2020</td>
+                        <td>03/23/2020</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.62810</td>
+                        <td>12/27/2019</td>
+                        <td>12/24/2019</td>
+                        <td>12/23/2019</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.30040</td>
+                        <td>09/27/2019</td>
+                        <td>09/25/2019</td>
+                        <td>09/24/2019</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.61060</td>
+                        <td>06/26/2019</td>
+                        <td>06/24/2019</td>
+                        <td>06/21/2019</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.16560</td>
+                        <td>03/28/2019</td>
+                        <td>03/26/2019</td>
+                        <td>03/25/2019</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.49630</td>
+                        <td>12/28/2018</td>
+                        <td>12/26/2018</td>
+                        <td>12/24/2018</td>
+                        </tr>
+                    <tr class="highlight">
+                        <th>Income</th>
+                        <td>$0.26830</td>
+                        <td>10/01/2018</td>
+                        <td>09/27/2018</td>
+                        <td>09/26/2018</td>
+                        </tr>
+                    </tbody>
+            </table>
+
+            <div class="price-disclaimers-container">
+                <p>
+                    The performance data shown represent past performance, which is not a guarantee of future results. Investment returns and principal value will fluctuate, so investors' shares, when sold, may be worth more or less than their original cost. Current performance may be lower or higher than the performance data cited.
+                </p>
+                <p>
+                    Performance data for periods of less than one year do not reflect the deduction of purchase and redemption fees. Maintenance, low-balance, and service fees may be assessed by some funds. None of these fees are reflected in the performance figures. If these fees were included, the performance would be lower. All other performance data are adjusted for purchase and redemption fees, where applicable.
+                </p>
+                <p>
+                    The performance of an index is not an exact representation of any particular investment, as you cannot invest directly in an index. Benchmark comparative indexes represent unmanaged or average returns on various financial assets, which can be compared with funds' total returns for the purpose of measuring relative performance.
+                </p>
+            </div>
+</div>

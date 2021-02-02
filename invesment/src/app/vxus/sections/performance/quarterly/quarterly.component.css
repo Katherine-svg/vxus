@@ -1,0 +1,72 @@
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+button {
+
+margin-top: 2%;
+cursor: pointer;
+height: 50px;
+width: 200px;
+padding: 16px;
+text-align: justify;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+background-color: white;
+border: 2px solid #ddd;
+}
+
+.menu {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.menu li {
+    height: 50px;
+    width: 200px;
+    padding: 16px;
+    z-index: 2;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+
+.greyNav {
+    background-color: #ddd;
+}
+.greyMarket{
+    background-color: #ddd;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  .title {
+      font-size: 12px;
+  }
+
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  td, th {
+    padding: 1.2rem;
+  }
+
+  .highlight:hover {background-color: #ddd;}
+
+/*
+https://css-tricks.com/complete-guide-table-element/
+
+
+
+*/

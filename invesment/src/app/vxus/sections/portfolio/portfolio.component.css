@@ -1,0 +1,131 @@
+.container {
+    padding: 3%;
+    padding-top: 10%;
+    height: 2900px;
+    width: 100%;
+}
+
+.portfolio {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio--left{
+    padding: 0 0 40px 0;
+    width: 50%;
+}
+
+.portfolio--right{
+    padding: 0 40px;
+    width: 50%;
+    border-left: 1px solid gray;
+}
+
+.subtitle p {
+    margin: 30px 0;
+}
+
+table {
+    width: 100%;
+    text-align: justify;
+    border-collapse: collapse;
+  }
+
+  .title {
+      font-size: 12px;
+  }
+
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  td, th {
+    padding: 1.2rem;
+  }
+
+  .highlight:hover {background-color: #ddd;}
+
+  .subtitle {
+      text-align: justify;
+  }
+
+  hr {
+      margin: 40px 0;
+  }
+
+  .more-info {
+      margin: 20px 0;
+  }
+
+  .emerging{
+      height: 500px;
+  }
+
+  .stylebox {
+      margin: 30px;
+  }
+
+  .holdings {
+      margin-top: 60px;
+  }
+
+  .holdings-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .btn-menu {
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.portfolio-btn {
+    cursor: pointer;
+    appearance: none;
+    padding: 18px 0 15px;
+    font-size: 15px;
+    letter-spacing: -.01em;
+    line-height: 15px;
+    border: none;
+    background: none;
+    margin: 3% 3% 0 0;
+}
+
+.portfolio-menu button:hover {
+    color: #c0bebe;
+}
+
+
+
+.active {
+    border-bottom: 5px solid black;
+}
+
+.card-boxes {
+    width: 100%;
+    height: 450px;
+    margin: 30px auto;
+    padding: 50px;
+    position: relative;
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+.card-boxes div {
+    width: 40%;
+}
+
+.card-boxes div p {
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+.card-boxes a {
+    position: absolute;
+    bottom: 55px;
+    right: 50px;
+    color: white;
+}
+

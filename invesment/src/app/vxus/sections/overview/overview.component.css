@@ -1,0 +1,128 @@
+.container {
+    padding: 3%;
+    padding-top: 10%;
+    height: 2000px;
+    width: 100%;
+}
+
+.over-view p {
+    padding: 50px;
+    padding-left: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3 {
+    margin: 5%;
+    margin-left: 0;
+}
+
+.fund-facts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+.fund-facts-outer{
+    padding: 2%;
+    padding-left: 0;
+    width: 55%;
+    border-right: 1px solid gray;
+}
+
+.fund-facts div {
+    width: 190px;
+    height: 80px;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.small-subtitle{
+    font-size: 0.7em;
+    line-height: 1.5;
+  }
+.large-number{
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+.small-date{
+  font-size: 0.7em;
+  line-height: 1.5;
+}
+
+.investment-approach{
+    padding: 2%;
+    padding-left: 5%;
+    width: 40%;
+}
+
+hr {
+    margin: 5%;
+}
+
+ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    list-style-position: outside;
+}
+
+li {
+    padding: 0.6em;
+}
+
+.investment-approach p {
+    font-size: 16px;
+}
+
+.trading-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trading-inner div {
+    margin: 100px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.card-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-boxes div {
+    width: 42%;
+    height: 300px;
+    margin: 30px;
+    padding: 50px;
+    padding-top: 15px;
+    position: relative;
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+.card-boxes div div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+.card-boxes div div p {
+    font-size: 16px;
+}
+
+.card-boxes div div a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+}

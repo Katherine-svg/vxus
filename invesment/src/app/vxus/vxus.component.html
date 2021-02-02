@@ -1,0 +1,26 @@
+<div class="stick-nav" [ngClass]="{'sticky': stick}" #stickyMenu>
+<a href="#overview" [ngClass]="{'active': vrvw}">Overview</a>
+<a href="#performance" [ngClass]="{'active': prfrmnc}">Performance</a>
+<a href="#price" [ngClass]="{'active': prc}">Price & distributions</a>
+<a href="#portfolio" [ngClass]="{'active': prtfl}">Portfolio</a>
+<a href="#risk" [ngClass]="{'active': rsk}">Risk</a>
+<a href="#fund-management" [ngClass]="{'active': mngmnt}">Fund management</a>
+<a href="#fund-literature" [ngClass]="{'active': ltrtr}">Fund literature</a>
+</div>
+
+<a href="#" id="overview" #overview></a>
+<app-overview></app-overview>
+<a href="#" id="performance" #performance></a>
+<app-performance></app-performance>
+<a href="#" id="price" #price></a>
+<app-price></app-price>
+<a href="#" id="portfolio" #portfolio></a>
+<app-portfolio></app-portfolio>
+<a href="#" id="risk" #risk></a>
+<app-risk></app-risk>
+<a href="#" id="fund-management" #management></a>
+<app-fund-management></app-fund-management>
+<a href="#" id="fund-literature" #literature></a>
+<app-fund-literature></app-fund-literature>
+
+

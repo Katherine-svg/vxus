@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Risk</h2>
+
+    <div class="subtitle">
+    <h3>Risk and volatility</h3>
+    <p>as of 12/31/2020</p>
+    </div>
+
+    <div class="btn-menu">
+        <button (click)="toggleT()" class="risk-btn" [ngClass]="{'active': showThree}">3 year</button>
+        <button (click)="toggleF()" class="risk-btn" [ngClass]="{'active': showFive}">5 year</button>
+            </div>
+    
+        <app-three *ngIf="showThree"></app-three>
+        <app-five *ngIf="showFive"></app-five>
+</div>

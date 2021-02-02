@@ -1,0 +1,78 @@
+
+<div class="legend"><div><p>RECENT RETURNS</p></div> <div><p>AVERAGE ANNUAL</p></div></div>
+<div class="chart" style="display: block">
+<canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            >
+    </canvas>
+    </div>
+<table>
+    <thead>
+        <tr>
+        <th class="title"></th>
+        <th class="title">QUARTER-END</th>
+        <th class="title">YTD</th>
+        <th class="title">1 YEAR</th>
+        <th class="title">3 YEAR</th>
+        <th class="title">5 YEAR</th>
+        <th class="title">10 YEAR</th>
+        <th class="title">SINCE INCEPTION</th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr class="highlight">
+            <th class="subtitle">VXUS (Market price)</th>
+            <td>16.36%</td>
+            <td>10.71%</td>
+            <td>10.71%</td>
+            <td>4.87%</td>
+            <td>9.02%</td>
+            <td>-</td>
+            <td>4.93%</td>
+            </tr>
+        <tr class="highlight">
+            <th class="subtitle">VXUS (NAV)</th>
+            <td>16.92%</td>
+            <td>11.32%</td>
+            <td>11.32%</td>
+            <td>5.02%</td>
+            <td>9.11%</td>
+            <td>-</td>
+            <td>4.98%</td>
+            </tr>
+        <tr class="highlight">
+            <th class="subtitle">Benchmark<sup>1</sup></th>
+            <td>17.21%</td>
+            <td>11.24%</td>
+            <td>11.24%</td>
+            <td>4.98%</td>
+            <td>9.07%</td>
+            <td>5.18%</td>
+            <td>5.02%</td>
+            </tr>
+        <tr class="highlight">
+            <th class="subtitle">+/- Benchmark</th>
+            <td>-0.29%</td>
+            <td>0.08%</td>
+            <td>0.08%</td>
+            <td>0.04%</td>
+            <td>0.04%</td>
+            <td>-</td>
+            <td>-0.04%</td>
+            </tr>
+        <tr class="highlight">
+            <th class="subtitle">Difference due to fair value pricing</th>
+            <td>-0.26%</td>
+            <td>0.17%</td>
+            <td>0.17%</td>
+            <td>0.12</td>
+            <td>0.11%</td>
+            <td>-</td>
+            <td>0.00%</td>
+            </tr>
+        </tbody>
+</table>

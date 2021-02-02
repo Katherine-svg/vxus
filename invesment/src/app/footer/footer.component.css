@@ -1,0 +1,91 @@
+.stay {
+    width: 100%;
+    height: 400px;
+    background-color: #3a3a3a;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.up-to-date {
+    width: 45%;
+    margin: 50px;
+    color: white;
+}
+
+.up-to-date p {
+    margin: 20px 0;
+}
+
+.signup {
+    width: 35%;
+    margin: 50px;
+    padding: 30px 60px;
+    color: white;
+    background-color: #232323;
+}
+
+.space {
+    margin: 15px 0;
+}
+
+.privacy-statement {
+    width: 100%;
+    font-size: 12px;
+    padding-top: 50px;
+}
+
+.btn {
+    float: right;
+}
+
+button {
+    background-color: #232323;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  button:focus {outline:0;}
+
+  [type="checkbox"] {
+    box-shadow: 0;
+    margin-right: 14px;
+    border-radius: 0;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #d1d1d1;
+    appearance: none;
+    
+}
+
+[type="checkbox"]:checked {
+    color: white;
+    background: white;
+    border: 2px solid white;
+}
+
+[type="checkbox"]:focus {outline:0;}
+
+label span {
+    position: relative;
+    top: -5px;
+}
+
+input[type=email] {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: white;
+    border: 2px solid white;
+    background-color: #232323;
+  }
+
+  [type="email"]:focus {outline:0;}

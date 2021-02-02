@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Roman';
+    src: url('assets/univers-lt-cufonfonts-webfont/Univers LT 55 Roman.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('assets/univers-lt-cufonfonts-webfont/Univers LT 45 Light.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'light';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3 {font-size: 26px;}
+
+button:focus {outline:0;}

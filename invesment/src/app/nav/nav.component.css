@@ -1,0 +1,32 @@
+#nav {
+    height: 90px;
+    width: 100%;
+    border: solid 1px #dad9d9;
+    display: flex;
+}
+#logo {
+height: 90px;
+width: 20%;
+border: solid 1px #dad9d9;
+}
+a{
+    float: left;
+    color: #2b2929;
+    text-align: center;
+    padding: 30px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.middle {
+    height: 90px;
+    width: 60%;
+    border: solid 1px #dad9d9;
+}
+
+#search{
+    height: 90px;
+    width: 20%;
+    border: solid 1px #dad9d9;
+}

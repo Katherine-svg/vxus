@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Performance</h2>
+    <div class="middle">
+    <h3>Total returns</h3>
+
+    <button class="download">Export returns data</button>
+        </div>
+    <p>Expense ratio 0.08%</p>
+
+    <div class="btn-menu">
+    <button (click)="toggleS()" class="performance-btn" [ngClass]="{'active': showSummary}">Summary</button>
+    <button (click)="toggleQ()" class="performance-btn" [ngClass]="{'active': showQuarterly}">Quarterly</button>
+    <button (click)="toggleA()" class="performance-btn" [ngClass]="{'active': showAnnually}">Annually</button>
+    <button (click)="toggleC()" class="performance-btn" [ngClass]="{'active': showCumulative}">Cumulative</button>
+        </div>
+
+    <app-summary *ngIf="showSummary"></app-summary>
+    <app-quarterly *ngIf="showQuarterly"></app-quarterly>
+    <app-annually *ngIf="showAnnually"></app-annually>
+    <app-cumulative *ngIf="showCumulative"></app-cumulative>
+
+</div>

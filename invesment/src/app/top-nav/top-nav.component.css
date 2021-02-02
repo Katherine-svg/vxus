@@ -1,0 +1,13 @@
+.right {
+    float: right;
+}
+
+a{
+    float: left;
+    color: #1a1919;
+    text-align: center;
+    padding: 19px 25px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+}
